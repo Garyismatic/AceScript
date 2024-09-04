@@ -1,7 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../Context/UserProvider";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import SortByOptions from "../components/SortByOptions";
 import KataCard from "../components/KataCard";

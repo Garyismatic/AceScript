@@ -38,21 +38,6 @@ export default function Features() {
 						<Image src={codingLanguages} alt="coding-languages" height={220} width={220} quality={100} className="rounded-xl"  />
 					</div>
 				</div>
-				{/* <div className="border rounded-lg px-10 py-12 flex flex-col md:flex-row gap-6 md:items-center md:gap-10">
-					<div className="md:w-1/2 ">
-						<h3 className="text-xl font-semibold px-4 md:mb-6">
-							Detailed Solutions
-						</h3>
-						<p className="text-[#CBD5E1] px-4">
-							Review step-by-step solutions to all questions. Learn optimal
-							approaches, discover different ways to solve the same problem, and
-							understand the underlying concepts.
-						</p>
-					</div>
-					<div className="md:w-1/2 h-[200px] bg-[#BFDBFE1A] grid place-content-center">
-						<p>Image Of Feature Here</p>
-					</div>
-				</div> */}
 				<div className="border rounded-lg px-10 py-12 flex flex-col md:flex-row gap-6 md:items-center md:gap-10">
 					<div className="md:w-1/2 ">
 						<h3 className="text-xl font-semibold px-4 md:mb-6">

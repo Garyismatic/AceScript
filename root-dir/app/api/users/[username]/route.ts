@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import { changeUserDetails, fetchUser, removeUser } from "./model";
-import { z } from "zod";
 import { handleNotFound } from "../../utils/errorHandler";
 import { handleMongoError } from "../../utils/mongoErrorHandler";
 

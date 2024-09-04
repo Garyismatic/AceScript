@@ -1,5 +1,4 @@
-// @ts-ignore
-import Image from "next/image";
+
 import Google from "../../icons/Google";
 import Microsoft from "../../icons/Microsoft";
 import IBM from "../../icons/IBM";

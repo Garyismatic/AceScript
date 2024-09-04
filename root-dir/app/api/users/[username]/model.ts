@@ -1,6 +1,4 @@
 import { client, db } from "../../../mongodb/connection";
-import { handleNotFound } from "../../utils/errorHandler";
-import { passwordLoginAttempt } from "../../utils/utils";
 
 
 

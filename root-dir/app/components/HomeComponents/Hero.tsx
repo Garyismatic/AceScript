@@ -62,18 +62,4 @@ export default function Hero() {
 		</>
 	);
 }
-{
-	/*
-	export default function mean(arr) {
-		if (arr.length === 0) return NaN;
-  const sum = arr.reduce((acc, val) => {
-    return acc + val;
-  }, 0);
-  return sum / arr.length;
-}
-<span>
-Prepare confidently for your next interview with our tailored practice
-environment. Get instant feedback, refine your skills, and stand out
-from the competition.
-</span> */
-}
+

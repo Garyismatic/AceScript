@@ -33,7 +33,7 @@ const UserProfile = () => {
         const data = await response.json();
 
         if (response.ok) {
-          setUser((prevUser) => ({ ...prevUser, avatar: newAvatarUrl }));
+          setUser((currUser) => ({ ...currUser, avatar: newAvatarUrl }));
           alert("Avatar updated successfully!");
         } else {
           throw new Error(data.message || "Failed to update avatar");
@@ -66,8 +66,11 @@ const UserProfile = () => {
     }
   };
 
-  const handleSeeProgress = () => {
-    router.push("/dashboard");
+
+
+  const handleLogout = () => {
+    setUser(null);
+    router.push("/");
   };
 
   return (
@@ -82,13 +85,16 @@ const UserProfile = () => {
       </h1>
       <ProgressCircle completed={user?.problems_solved.length || 0} total={9} />
       <button onClick={handleUpdateImage} className={buttonStyle}>
-        Update Image
+        Update Avatar
       </button>
       <button
         onClick={() => router.push("/dashboard")}
         className={buttonStyleGreen}
       >
         See Dashboard
+      </button>
+      <button onClick={handleLogout} className={buttonStyleAmber}>
+        Logout
       </button>
       <button onClick={handleDeleteProfile} className={buttonStyleRed}>
         Delete Profile
@@ -101,5 +107,6 @@ const buttonStyle =
   "py-3 px-6 text-lg bg-blue-500 text-white rounded cursor-pointer mb-2.5 w-full";
 const buttonStyleGreen = `${buttonStyle} bg-green-500`;
 const buttonStyleRed = `${buttonStyle} bg-red-500`;
+const buttonStyleAmber = `${buttonStyle} bg-orange-400`;
 
 export default UserProfile;

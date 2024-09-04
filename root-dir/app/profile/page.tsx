@@ -7,7 +7,7 @@ import { UserContext } from "../Context/UserProvider";
 const ProfilePage: React.FC = () => {
   const { user } = useContext(UserContext);
   return (
-    <div className="flex justify-center items-start mt-12 gap-5 flex-wrap px-12 mb-16">
+    <div className="flex justify-center items-start mt-12 gap-5 flex-wrap px-12 mb-16 h-max">
       <UserProfile />
       <UserSolutions />
     </div>

@@ -21,6 +21,7 @@ const Dashboard: React.FC = () => {
   const router = useRouter();
   const [sortBy, setSortBy] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  
   useEffect(() => {
     if (!user?.isLoggedIn) {
       alert("Please login first");

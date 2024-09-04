@@ -19,6 +19,7 @@ export default function Header() {
   const handleResize = () => {
     setMobileWidth(window.innerWidth);
   };
+
   useEffect(() => {
     if (user?.isLoggedIn) {
       setShowProfile(true);
@@ -30,7 +31,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [user?.isLoggedIn, mobileWidth]);
+  }, [user?.isLoggedIn, mobileWidth, ]);
 
   return (
     <>
@@ -39,7 +40,7 @@ export default function Header() {
           <Link href="/">
             <Image
               src="/ace3.png"
-              alt="Code Ninjas Logo"
+              alt="Ace Script Logo"
               width={120}
               height={120}
               style={{ cursor: "pointer" }}

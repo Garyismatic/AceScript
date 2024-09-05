@@ -1,7 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../Context/UserProvider";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import SortByOptions from "../components/SortByOptions";
 import KataCard from "../components/KataCard";
@@ -22,6 +21,7 @@ const Dashboard: React.FC = () => {
   const router = useRouter();
   const [sortBy, setSortBy] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  
   useEffect(() => {
     if (!user?.isLoggedIn) {
       alert("Please login first");

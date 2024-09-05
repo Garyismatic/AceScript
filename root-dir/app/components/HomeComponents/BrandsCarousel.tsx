@@ -1,5 +1,4 @@
-// @ts-ignore
-import Image from "next/image";
+
 import Google from "../../icons/Google";
 import Microsoft from "../../icons/Microsoft";
 import IBM from "../../icons/IBM";
@@ -14,7 +13,7 @@ export default function BrandsCarousel() {
 	return (
 		<div className="pt-24 flex flex-col gap-6 p-6 max-w-7xl m-auto">
 			<p className="text-center mb-10 text-[#CBD5E1] font-semibold text-lg ">
-				Our questions have been asked at
+				Our Tech challenges may have been asked by companies like
 			</p>
 			<div className="slider">
 				<div className="slide-track">
